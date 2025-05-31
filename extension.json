@@ -1,0 +1,26 @@
+{
+  "name": "Webhook Discord",
+  "id": "webhookdiscord",
+  "color1": "#7289da",
+  "blocks": [
+    {
+      "opcode": "sendEmbed",
+      "blockType": "command",
+      "text": "envoyer embed à l'URL [URL] avec titre [TITLE] et description [DESC]",
+      "arguments": {
+        "URL": {
+          "type": "string",
+          "defaultValue": "https://discord.com/api/webhooks/..."
+        },
+        "TITLE": {
+          "type": "string",
+          "defaultValue": "Titre"
+        },
+        "DESC": {
+          "type": "string",
+          "defaultValue": "Description"
+        }
+      }
+    }
+  ]
+}
